@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PersonalSiteMVC.Models;
 using System.Diagnostics;
+using Microsoft.Extensions.Configuration;
 
 namespace PersonalSiteMVC.Controllers
 {
@@ -8,10 +9,15 @@ namespace PersonalSiteMVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration _config;
+        public HomeController(ILogger<HomeController> logger, IConfiguration config)
         {
             _logger = logger;
+            _config = config;
+            
         }
+        
+
 
         public IActionResult Index()
         {
@@ -28,5 +34,31 @@ namespace PersonalSiteMVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        public IActionResult Works()
+        {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Classmates()
+        {
+            return View();
+        }
+
     }
+
+
+
+
 }
