@@ -253,6 +253,13 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
 }
+	#aboutwrap h3 {
+		color: #F7DC6F
+
+	}
+	#aboutwrap span{
+		background-color: white;
+	}
 
 
 /* Gallery */
@@ -268,20 +275,20 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Form */
 
 #contactwrap {
-	background: url(https://funsubstance.com/uploads/original/18/18076.jpg) no-repeat center top;
+	background: url(https://images.unsplash.com/photo-1624696612050-73b5891cafcf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
-	text-align:center;
+	text-align: center;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-  background-size: 60%;
-  /* background-size: cover; */
+	background-size: 60%;
+	/* background-size: cover; */
 }
 
 #contactwrap h1 {
-	color:rgba(255, 255, 0, .5);
+	color: #A569BD;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
@@ -361,6 +368,11 @@ h1, h2, h3, h4, h5, h6 {
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
+}
+
+Classmates{
+	max-height: 750px;
+	max-width: 750px;
 }
 
 @-webkit-keyframes animate-loading {
